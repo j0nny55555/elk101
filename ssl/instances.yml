@@ -1,0 +1,5 @@
+instances:
+  - name: "node1"
+    ip:
+      - "127.0.0.1"
+    filename: "cadir"
