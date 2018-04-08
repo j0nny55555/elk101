@@ -17,12 +17,14 @@ ELK Vagrant Box:
 https://github.com/apolloclark/elk
 
 Python module install list:
-PS > C:\Python27\python.exe -m pip install --upgrade pip
-PS > C:\Python27\python.exe -m pip install urllib3
-PS > C:\Python27\python.exe -m pip install elasticsearch
-PS > C:\Python27\python.exe -m pip install dateutil
-PS > C:\Python27\python.exe -m pip install python-dateutil
-PS > C:\Python27\python.exe -m pip install pytz
+```bash
+python -m pip install --upgrade pip
+python -m pip install urllib3
+python -m pip install elasticsearch
+python -m pip install dateutil
+python -m pip install python-dateutil
+python -m pip install pytz
+```
 
 Script building:
 =============================
