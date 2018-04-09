@@ -29,6 +29,9 @@ Syslog:
 ============================
 You will need to modify your ELK installation to forward tcp/udp port 5000.
 Then move the syslogpipeline.conf to the /etc/logstash/conf.d/ folder
+Details on the Syslog input for Logstash:
+https://www.elastic.co/guide/en/logstash/current/config-examples.html#_processing_syslog_messages
+https://www.elastic.co/guide/en/logstash/current/plugins-inputs-syslog.html
 On the host you want to send logs from:
 ```bash
 sudo vim /etc/rsyslog.d/50-default.conf
@@ -70,6 +73,9 @@ http://yallalabs.com/linux/how-to-setup-a-centralized-log-server-using-rsyslog-o
 
 Collecting and sending Syslog with additional Effects:
 https://www.digitalocean.com/community/tutorials/how-to-centralize-logs-with-rsyslog-logstash-and-elasticsearch-on-ubuntu-14-04
+
+Building Filebeat for ARM:
+https://discuss.elastic.co/t/how-to-install-filebeat-on-a-arm-based-sbc-eg-raspberry-pi-3/103670/4
 
 Script building:
 =============================

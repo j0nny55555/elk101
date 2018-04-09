@@ -7,6 +7,7 @@ Put Logstash into a standard out mode, it will literally show you all rubydebug
 Watch the Logstash service and other bits for errors
 ```shell
 sudo tail -f -n20 /usr/share/logstash/logs/logstash-plain.log
+sudo tail -f -n30 /var/log/logstash/logstash-plain.log
 tail -f /tmp/metrics.log
 tail -f /tmp/errors.log
 ```
