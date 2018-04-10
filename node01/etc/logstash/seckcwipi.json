@@ -34,9 +34,8 @@
                     "type" : "integer"
                 },
                 "json_message" : {
-                    "type" : "json"
+                    "type" : "json",
                     "enabled" : true
-            
                 },
                 "source" : {
                     "type" : "text"
