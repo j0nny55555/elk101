@@ -5,7 +5,7 @@
         "index.refresh_interval" : "5s"
     },
     "mappings" : {
-        "_default_" : {
+        "syslogwithgeo" : {
             "properties" : {
                 "@timestamp" : {
                     "type" : "date",
@@ -19,12 +19,10 @@
                     "type" : "short"
                 },
                 "location" : {
-                    "type" : "geo_point",
-                    "include_in_all" : false
+                    "type" : "geo_point"
                 },
                 "embedded_timestamp" : {
-                    "type" : "date",
-                    "include_in_all" : false
+                    "type" : "date"
                 },
                 "syslog_hostname" : {
                     "type" : "text"

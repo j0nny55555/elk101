@@ -37,7 +37,7 @@ es = Elasticsearch(
 )
 
 # Set Index name
-indexname = "_default_"
+indexname = "seckcwipi"
 
 # index settings
 bodymapping = '''{
@@ -60,9 +60,9 @@ bodysettings='''{
 try:
     #es.indices.create(index=str(indexname), ignore=400, body=bodysettings)
     #es.indices.create(index=str(indexname), ignore=400)
-    es.indices.put_mapping(index=str(indexname), doc_type='syslog', body=bodymapping)
+    es.indices.put_mapping(index=str(indexname), doc_type='syslogwithgeo', body=bodymapping)
     print('Created indice: '+indexname)
-    mappingset = es.indices.get_mapping()
+    mappingset = es.indices.get_mapping(index=str(indexname))
     pprint(mappingset)
 except:
     e1 = sys.exc_info()[0]
