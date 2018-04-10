@@ -2,7 +2,7 @@ Logstash takes quite a bit of tunning, in that here are some helpful commands
 ====================================================================
 Put Logstash into a standard out mode, it will literally show you all rubydebug
 ```shell
-/usr/share/logstash/bin/logstash -f /etc/logstash/conf.d/pipelinename.conf --config.reload.automatic
+/usr/share/logstash/bin/logstash -f /etc/logstash/conf.d/ --path.settings /etc/logstash/ -i --config.reload.automatic
 ```
 Watch the Logstash service and other bits for errors
 ```shell
