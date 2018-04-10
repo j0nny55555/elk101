@@ -1,0 +1,55 @@
+{
+    "template" : "seckcwipi*",
+    "version" : 50001,
+    "settings" : {
+        "index.refresh_interval" : "5s"
+    },
+    "mappings" : {
+        "_default_" : {
+            "properties" : {
+                "@timestamp" : {
+                    "type" : "date",
+                    "include_in_all" : false
+                },
+                "@version" : {
+                    "type": "keyword",
+                    "include_in_all" : false
+                },
+                "syslog_pri" : {
+                    "type" : "short"
+                },
+                "location" : {
+                    "type" : "geo_point",
+                    "include_in_all" : false
+                },
+                "embedded_timestamp" : {
+                    "type" : "date",
+                    "include_in_all" : false
+                },
+                "syslog_hostname" : {
+                    "type" : "text"
+                },
+                "syslog_program" : {
+                    "type" : "text"
+                },
+                "syslog_pid" : {
+                    "type" : "integer"
+                },
+                "json_message" : {
+                    "type" : "json"
+                    "enabled" : true
+            
+                },
+                "source" : {
+                    "type" : "text"
+                },
+                "status" : {
+                    "type" : "text"
+                },
+                "messagetype" : {
+                    "type" : "text"
+                }
+            }
+        }
+    }
+}

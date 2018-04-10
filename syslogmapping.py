@@ -37,7 +37,7 @@ es = Elasticsearch(
 )
 
 # Set Index name
-indexname = "logstash-2018.04.05"
+indexname = "_default_"
 
 # index settings
 bodymapping = '''{
@@ -53,15 +53,16 @@ bodysettings='''{
     "number_of_replicas": 0
 }'''
 
-if es.indices.exists(str(indexname)):
-    es.indices.delete(index=str(indexname))
+#if es.indices.exists(str(indexname)):
+#    es.indices.delete(index=str(indexname))
 
 # ignore 400 cause by IndexAlreadyExistsException when creating an index
 try:
-    es.indices.create(index=str(indexname), ignore=400, body=bodysettings)
+    #es.indices.create(index=str(indexname), ignore=400, body=bodysettings)
+    #es.indices.create(index=str(indexname), ignore=400)
     es.indices.put_mapping(index=str(indexname), doc_type='syslog', body=bodymapping)
     print('Created indice: '+indexname)
-    mappingset = es.indices.get_mapping(index=str(indexname))
+    mappingset = es.indices.get_mapping()
     pprint(mappingset)
 except:
     e1 = sys.exc_info()[0]
