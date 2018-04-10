@@ -31,8 +31,29 @@
                     "type" : "integer"
                 },
                 "json_message" : {
-                    "type" : "json",
-                    "enabled" : true
+                    "properties" : {
+                        "time" : {
+                            "type" : "date"
+                        },
+                        "model" : {
+                            "type" : "text"
+                        },
+                        "id" : {
+                            "type" : "short"
+                        },
+                        "battery" : {
+                            "type" : "text"
+                        },
+                        "temperature_C" : {
+                            "type" : "long"
+                        },
+                        "humidity" : {
+                            "type" : "short"
+                        },
+                        "test" : {
+                            "type" : "text"
+                        }
+                    }
                 },
                 "source" : {
                     "type" : "text"
