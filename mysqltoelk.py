@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# Anonymous Author & Jim McKibben
+# Scott Arnold & Jim McKibben
 # 2018-04-05
 """Python2 code to import a MySQL Query to an ELK environment."""
 import ipaddress, netaddr

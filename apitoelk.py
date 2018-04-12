@@ -1,5 +1,5 @@
 #!/usr/bin/env python2
-# Anonymous Author
+# Scott Arnold
 # 2018-04-05
 """Python2 code to import a CSV to an ELK environment."""
 import apiconn, ipaddress, netaddr, time, datetime
