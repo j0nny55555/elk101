@@ -31,29 +31,7 @@
                     "type" : "integer"
                 },
                 "json_message" : {
-                    "properties" : {
-                        "time" : {
-                            "type" : "date"
-                        },
-                        "model" : {
-                            "type" : "text"
-                        },
-                        "id" : {
-                            "type" : "short"
-                        },
-                        "battery" : {
-                            "type" : "text"
-                        },
-                        "temperature_C" : {
-                            "type" : "long"
-                        },
-                        "humidity" : {
-                            "type" : "short"
-                        },
-                        "test" : {
-                            "type" : "text"
-                        }
-                    }
+                    "type" : "nested"
                 },
                 "source" : {
                     "type" : "text"
