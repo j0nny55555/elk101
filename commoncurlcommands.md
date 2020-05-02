@@ -26,6 +26,8 @@ POST indexname/_delete_by_query?conflicts=proceed
   }
 }
 
+GET /_cat/indices/*?v&s=index
+
 GET _all/_stats
 
 GET _cluster/health
